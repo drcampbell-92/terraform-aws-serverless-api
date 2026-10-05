@@ -9,3 +9,7 @@ output "function_name" {
 output "api_url" {
   value = aws_apigatewayv2_api.notes.api_endpoint
 }
+
+output "github_role_arn" {
+  value = aws_iam_role.github_plan.arn
+}
